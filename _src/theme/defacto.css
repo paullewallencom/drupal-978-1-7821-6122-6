@@ -1,0 +1,40 @@
+/* 
+ * CSS file for Chapter 7 of Drupal 7 Commerce book
+ *
+ * If you're building a theme for release on drupal.org, consider reading Drupal's CSS standards at http://drupal.org/node/302199 :)
+ */
+/* Insert web font from Google fonts */
+@import url("http://fonts.googleapis.com/css?family=PT+Sans");
+body {
+	font-family: "PT Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Product page */
+.field-name-commerce-price {
+	color: #88aa00;
+	font-size: 24px;
+	font-weight: bold;
+}
+.commerce-add-to-cart .form-submit {
+	background: #88aa00 url("images/add-to-cart_bg.png") no-repeat 5px center; /* Green */
+	border-color: #739000; /* Dark green */
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px 10px 10px 25px; /* Top, right, bottom, left */
+}
+	/* Bonus style for hovering/clicking the button */
+	.commerce-add-to-cart .form-submit:focus, .commerce-add-to-cart .form-submit:hover, .commerce-add-to-cart .form-submit:active {
+		background-color: #739000;	
+	}
+.field-name-field-images {
+	float: right;	
+}
+
+/* Category page */
+
+/* Checkout page */
+.field-name-commerce-order-total .field-items  {
+	background: #88aa00 !important; /* Damn you Drupal */
+	color:#fff;
+}
